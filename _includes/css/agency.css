@@ -1048,4 +1048,35 @@ header {
     padding-top: 120px;
   }
 }
+/* =========================
+   FIX NAVBAR / HEADER OVERLAP (Template Léna & Alban)
+   ========================= */
+
+/* 1) La classe .brand du template a un padding-top énorme qui casse la navbar */
+a.brand {
+  padding-top: 0 !important;
+  line-height: 1 !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 2) Aligner proprement le bloc (logo + boutons EN/FR) */
+.navbar-header span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 3) Quand la navbar est fixed-top, on décale tout le contenu de la page */
+@media (min-width: 768px) {
+  body {
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 90px;
+  }
+}
 
