@@ -1079,4 +1079,13 @@ a.brand {
     padding-top: 90px;
   }
 }
+/* Navbar visible dès le chargement */
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: rgba(34, 34, 34, 0.85) !important;
+  }
+}
+.navbar-fixed-top {
+  z-index: 9999;
+}
 
