@@ -372,9 +372,19 @@ header {
     -o-background-size: cover;
 }
 
+/* Corriger le header sous navbar fixe */
 header .intro-text {
-    padding-top: 180px;
-    padding-bottom: 50px;
+  padding-top: 120px !important;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  header .intro-text {
+    padding-top: 160px !important;
+    padding-bottom: 120px;
+  }
+}
+
 }
 
 header .intro-text .intro-lead-in {
