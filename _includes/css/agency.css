@@ -1008,3 +1008,44 @@ header {
   margin-top: 90px;
 }
 
+/* =========================
+   FIX HEADER / NAVBAR OVERLAP
+   ========================= */
+
+/* Desktop & tablets */
+@media (min-width: 768px) {
+  /* Fix hauteur navbar */
+  .navbar {
+    min-height: 90px;
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    line-height: 90px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* Décaler le header sous la navbar */
+  header {
+    margin-top: 90px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  /* Navbar un peu moins haute */
+  .navbar {
+    min-height: 70px;
+  }
+
+  /* Décaler le header sous la navbar */
+  header {
+    margin-top: 70px;
+  }
+
+  /* Sur mobile, on garde une respiration correcte */
+  header .intro-text {
+    padding-top: 120px;
+  }
+}
+
