@@ -992,3 +992,14 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* Fix hauteur navbar pour éviter chevauchement */
+.navbar {
+  min-height: 90px;
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+  line-height: 90px;
+}
+
