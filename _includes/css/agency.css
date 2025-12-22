@@ -1003,3 +1003,8 @@ body {
   line-height: 90px;
 }
 
+/* Décaler le header sous la navbar */
+header {
+  margin-top: 90px;
+}
+
