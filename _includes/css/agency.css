@@ -992,67 +992,11 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
-
-/* Fix hauteur navbar pour éviter chevauchement */
-.navbar {
-  min-height: 90px;
-}
-
-.navbar-brand,
-.navbar-nav > li > a {
-  line-height: 90px;
-}
-
-/* Décaler le header sous la navbar */
-header {
-  margin-top: 90px;
-}
-
 /* =========================
-   FIX HEADER / NAVBAR OVERLAP
+   NAVBAR: NOIRE + FIXE + SANS BUGS
    ========================= */
 
-/* Desktop & tablets */
-@media (min-width: 768px) {
-  /* Fix hauteur navbar */
-  .navbar {
-    min-height: 90px;
-  }
-
-  .navbar-default .navbar-nav > li > a {
-    line-height: 90px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  /* Décaler le header sous la navbar */
-  header {
-    margin-top: 90px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  /* Navbar un peu moins haute */
-  .navbar {
-    min-height: 70px;
-  }
-
-  /* Décaler le header sous la navbar */
-  header {
-    margin-top: 70px;
-  }
-
-  /* Sur mobile, on garde une respiration correcte */
-  header .intro-text {
-    padding-top: 120px;
-  }
-}
-/* =========================
-   FIX NAVBAR / HEADER OVERLAP (Template Léna & Alban)
-   ========================= */
-
-/* 1) La classe .brand du template a un padding-top énorme qui casse la navbar */
+/* 0) La classe .brand du template avait un padding-top énorme */
 a.brand {
   padding-top: 0 !important;
   line-height: 1 !important;
@@ -1060,74 +1004,36 @@ a.brand {
   vertical-align: middle;
 }
 
-/* 2) Aligner proprement le bloc (logo + boutons EN/FR) */
-.navbar-header span {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* 3) Quand la navbar est fixed-top, on décale tout le contenu de la page */
-@media (min-width: 768px) {
-  body {
-    padding-top: 110px;
-  }
-}
-
-@media (max-width: 767px) {
-  body {
-    padding-top: 90px;
-  }
-}
-/* Navbar visible dès le chargement */
-@media (min-width: 768px) {
-  .navbar-default {
-    background-color: rgba(34, 34, 34, 0.85) !important;
-  }
-}
-.navbar-fixed-top {
-  z-index: 9999;
-}
-/* =========================
-   NAVBAR TOUJOURS NOIRE ET FIXE EN HAUT
-   ========================= */
-
-/* Barre fixe */
+/* 1) Navbar toujours visible et au-dessus du reste */
 .navbar-fixed-top {
   position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 9999 !important;
 }
 
-/* Toujours noire (même en haut de page) */
+/* 2) Toujours noire */
 .navbar-default {
   background-color: #222 !important;
   border-color: transparent !important;
 }
 
-/* Supprimer le padding énorme du thème sur desktop */
+/* 3) Hauteur raisonnable */
 @media (min-width: 768px) {
   .navbar-default {
     padding: 10px 0 !important;
   }
-
-  /* Décaler le contenu sous la barre */
-  body {
-    padding-top: 70px !important;
-  }
 }
 
-/* Mobile : barre un peu plus haute */
 @media (max-width: 767px) {
-  body {
-    padding-top: 85px !important;
+  .navbar-default {
+    padding: 8px 0 !important;
   }
 }
 
-/* IMPORTANT : la classe .brand du template ne doit pas pousser la navbar */
-a.brand {
-  padding-top: 0 !important;
+/* 4) Décaler la page sous la navbar (au lieu de margin-top sur header) */
+body {
+  padding-top: 80px !important;
 }
 
