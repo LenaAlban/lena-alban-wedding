@@ -1137,3 +1137,6 @@ body {
     padding: 120px 15px 40px;
   }
 }
+header .btn-xl {
+  margin-top: 30px;
+}
