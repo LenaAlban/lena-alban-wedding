@@ -1076,10 +1076,23 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 140px 20px 60px; /* top = espace sous navbar */
+  padding: 140px 20px 40px;
+}
+
+/* Texte bien centré verticalement */
+.hero-text {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Bouton collé en bas */
+.hero-cta {
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
 }
 
 /* texte central */
