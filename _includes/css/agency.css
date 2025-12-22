@@ -1124,7 +1124,7 @@ body {
 
 /* bouton en bas */
 .hero-cta {
-  margin-top: 60px;
+  margin-top: 25px;
 }
 
 /* mobile */
@@ -1137,6 +1137,22 @@ body {
     padding: 120px 15px 40px;
   }
 }
-header .btn-xl {
-  margin-top: 30px;
+header .btn-x {
+  margin-top: 18px;
+}
+header {
+  position: relative;
+}
+
+header:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 0;
+}
+
+header .intro-text {
+  position: relative;
+  z-index: 1;
 }
