@@ -1088,4 +1088,46 @@ a.brand {
 .navbar-fixed-top {
   z-index: 9999;
 }
+/* =========================
+   NAVBAR TOUJOURS NOIRE ET FIXE EN HAUT
+   ========================= */
+
+/* Barre fixe */
+.navbar-fixed-top {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+/* Toujours noire (même en haut de page) */
+.navbar-default {
+  background-color: #222 !important;
+  border-color: transparent !important;
+}
+
+/* Supprimer le padding énorme du thème sur desktop */
+@media (min-width: 768px) {
+  .navbar-default {
+    padding: 10px 0 !important;
+  }
+
+  /* Décaler le contenu sous la barre */
+  body {
+    padding-top: 70px !important;
+  }
+}
+
+/* Mobile : barre un peu plus haute */
+@media (max-width: 767px) {
+  body {
+    padding-top: 85px !important;
+  }
+}
+
+/* IMPORTANT : la classe .brand du template ne doit pas pousser la navbar */
+a.brand {
+  padding-top: 0 !important;
+}
 
