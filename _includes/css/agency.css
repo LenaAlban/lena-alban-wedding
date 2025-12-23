@@ -1059,7 +1059,7 @@ a.brand {
 
 /* 4) Décaler la page sous la navbar (au lieu de margin-top sur header) */
 body {
-  padding-top: 80px !important;
+  padding-top: 90px !important;
 }
 /* =========================
    HERO HEADER
