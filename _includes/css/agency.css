@@ -1011,8 +1011,7 @@ header .intro-text p {
   font-size: 20px;
   line-height: 1.5;
 }
-/* TEST - A SUPPRIMER APRES */
-header {
-  outline: 6px solid red !important;
-}
+/* TEST TEMP - a supprimer apres */
+body { outline: 8px solid lime !important; }
+
 
