@@ -459,15 +459,7 @@ section h3.section-subheading {
     z-index: 2;
 }
 
-@media(min-width:767px) {
-    #portfolio .portfolio-item {
-        margin: 0 0 30px;
-    }
-      header .btn-xl {
-    bottom: 22px !important;
-    width: calc(100% - 40px) !important;
-  }
-}
+
 
 .timeline {
     position: relative;
@@ -955,6 +947,128 @@ body {
 .hero-header .hero-subtitle{
   letter-spacing: 3px !important;
   text-transform
+/* =========================
+   HERO FINAL - /fr/
+   ========================= */
+
+/* navbar: on laisse de l'air pour ne pas "manger" le hero */
+body { padding-top: 0; }
+
+.hero-header{
+  position: relative !important;
+  height: 100vh !important;
+  min-height: 620px !important;
+  width: 100% !important;
+
+  background-image: url("/lena-alban-wedding/img/backgrounds/header.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* voile sombre pour lisibilite */
+.hero-header .hero-overlay{
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0,0,0,0.35) !important;
+  z-index: 1 !important;
+}
+
+/* contenu */
+.hero-header .hero-content{
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  max-width: 1100px !important;
+  padding: 0 20px 190px !important; /* reserve la place du bouton */
+}
+
+/* texte - mariage */
+.hero-header .hero-names{
+  font-family: "stay_classy_sldtregular","Kaushan Script",cursive !important;
+  font-weight: 400 !important;
+  font-size: 78px !important;
+  line-height: 1.05 !important;
+  letter-spacing: 1px !important;
+  margin: 0 0 12px !important;
+}
+
+.hero-header .hero-subtitle{
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  text-transform: lowercase !important;
+  letter-spacing: 3px !important;
+  font-size: 18px !important;
+  margin: 0 0 18px !important;
+  opacity: 0.95 !important;
+}
+
+.hero-header .hero-date,
+.hero-header .hero-location{
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.4 !important;
+  margin: 0 0 6px !important;
+  opacity: 0.95 !important;
+}
+
+/* lisibilite globale */
+.hero-header, .hero-header *{
+  color: #fff !important;
+  text-shadow: 0 3px 20px rgba(0,0,0,0.7) !important;
+}
+
+/* bouton: en bas, centre, texte centre */
+.hero-header .hero-cta{
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 12px !important;      /* plus bas */
+  transform: translateX(-50%) !important;
+  z-index: 3 !important;
+}
+
+.hero-header .hero-cta a.btn.btn-xl{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding: 12px 34px !important;
+  border-radius: 999px !important;
+
+  /* texte parfaitement centre */
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 2px !important;
+
+  /* luxe discret: bouton lisible => Montserrat (pas calligraphie) */
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+
+  background: rgba(214, 180, 104, 0.90) !important;
+  border: 1px solid rgba(255,255,255,0.35) !important;
+  color: #ffffff !important;
+}
+
+.hero-header .hero-cta a.btn.btn-xl:hover{
+  background: rgba(214, 180, 104, 1) !important;
+}
+
+/* enlever EN/FR */
+.navbar .btn-m{ display: none !important; }
+
+/* mobile */
+@media (max-width: 767px){
+  .hero-header{ min-height: 540px !important; }
+  .hero-header .hero-names{ font-size: 52px !important; }
+  .hero-header .hero-date,
+  .hero-header .hero-location{ font-size: 16px !important; }
+  .hero-header .hero-cta{ bottom: 10px !important; }
+}
 
 
 
