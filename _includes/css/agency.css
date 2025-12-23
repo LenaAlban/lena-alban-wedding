@@ -953,6 +953,21 @@ header .intro-text {
   text-align: center !important;
 }
 
+/* pousse le bouton en bas, centre */
+header .btn-xl {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 38px !important;
+  transform: translateX(-50%) !important;
+  z-index: 2 !important;
+}
+
+/* evite que le bouton recouvre le texte */
+header .intro-text {
+  padding-bottom: 110px !important;
+}
+
+
 /* force le texte visible */
 header, header * {
   color: #fff !important;
