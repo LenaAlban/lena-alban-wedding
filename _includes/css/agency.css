@@ -353,6 +353,10 @@ fieldset[disabled] .btn-m.active {
     }
 }
 
+/*    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }*/
+
 section {
     padding: 100px 0;
 }
