@@ -917,14 +917,19 @@ body { padding-top: 90px !important; }
 
 /* header avec image (URL en dur -> pas de {{ site.baseurl }}) */
 header {
+  position: relative !important; /* important pour header::before */
   min-height: calc(100vh - 90px) !important;
   background-image: url("/lena-alban-wedding/img/backgrounds/header.png") !important;
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
+
   display: flex !important;
   align-items: center !important;
+  justify-content: center !important; /* centre horizontalement */
+  text-align: center !important;      /* texte centre */
 }
+
 
 /* voile sombre pour lisibilité */
 header::before {
