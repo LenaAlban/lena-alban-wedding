@@ -1071,7 +1071,7 @@ header .intro-text p {
   }
 
   .hero-header .hero-cta {
-    bottom: 22px;
+    bottom: 18px;
     width: calc(100% - 40px);
   }
 
