@@ -951,6 +951,15 @@ body {
   text-shadow: 0 3px 20px rgba(0,0,0,0.7) !important;
 }
 
+/* bouton CTA bien en bas */
+.hero-header .hero-cta{
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 18px !important;
+  transform: translateX(-50%) !important;
+  z-index: 3 !important;
+}
+
 
 
 
