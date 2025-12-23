@@ -1054,7 +1054,7 @@ body {
   position: relative;
   height: 100vh; /* plein écran */
   min-height: 650px;
-  background-image: url('{{ site.baseurl }}/img/backgrounds/header.gif');
+  background-image: url('{{ site.baseurl }}/img/backgrounds/header.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
