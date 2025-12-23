@@ -1072,13 +1072,16 @@ header .intro-text p {
 
   .hero-header .hero-cta {
     bottom: 18px;
-    width: calc(100% - 40px);
+@media (max-width: 767px) {
+  .hero-header .hero-cta {
+    width: auto;
   }
-
   .hero-header .hero-cta .btn {
-    width: 100%;
+    width: auto !important;
+    min-width: 200px !important;
   }
 }
+
 
 
 
