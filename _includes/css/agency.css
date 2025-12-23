@@ -983,4 +983,32 @@ header, header * {
   header { min-height: calc(100vh - 70px) !important; }
 }
 
+/* === HERO : TEXTE CENTRÉ & LISIBLE === */
+
+header .intro-text {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header .intro-text p,
+header .intro-text h1,
+header .intro-text h2 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 3px 20px rgba(0,0,0,0.7);
+}
+
+header .intro-text h1 {
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+header .intro-text p {
+  font-size: 20px;
+  line-height: 1.5;
+}
 
