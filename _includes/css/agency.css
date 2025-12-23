@@ -1023,6 +1023,69 @@ body { padding-top: 0; }
   .hero-header .hero-cta{ bottom: 10px !important; }
 }
 
+/* =========================
+   OVERRIDE FINAL (anti-theme)
+   ========================= */
+
+/* 1) Neutralise les regles du theme sur <header> */
+header.hero-header{
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+/* 2) Hero = plein ecran visible (sans laisser de blanc) */
+header.hero-header{
+  height: 100vh !important;
+  min-height: 640px !important;
+}
+
+/* 3) On force le contenu a etre visible (si un style du theme le “fade”) */
+header.hero-header .hero-content,
+header.hero-header .hero-text{
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* 4) BOUTON: on empeche le mode "barre pleine largeur" */
+header.hero-header .hero-cta,
+header.hero-header .hero-cta a.btn,
+header.hero-header .hero-cta a.btn.btn-xl{
+  width: auto !important;
+  max-width: none !important;
+  display: inline-flex !important;
+}
+
+/* 5) Bouton: style chic + texte parfaitement centre */
+header.hero-header .hero-cta a.btn.btn-xl{
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+
+  padding: 12px 34px !important;
+  border-radius: 999px !important;
+  line-height: 1 !important;
+
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+
+  background: rgba(214, 180, 104, 0.90) !important;
+  border: 1px solid rgba(255,255,255,0.35) !important;
+  color: #ffffff !important;
+}
+
+/* 6) Bouton plus bas */
+header.hero-header .hero-cta{
+  bottom: 12px !important;
+}
+
+/* 7) Cache EN/FR (selecteur plus large, garanti) */
+.navbar-default .btn-m{
+  display: none !important;
+}
 
 
 
