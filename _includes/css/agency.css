@@ -908,70 +908,49 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-/* === HERO : TEXTE CENTRÉ & LISIBLE === */
-
-header .intro-text {
-  position: relative;
-  z-index: 2;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-header .intro-text p,
-header .intro-text h1,
-header .intro-text h2 {
-  color: #ffffff !important;
-  opacity: 1 !important;
-  text-shadow: 0 3px 20px rgba(0,0,0,0.7);
-}
-
-header .intro-text h1 {
-  font-size: 52px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-header .intro-text p {
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-
 /* =========================
-   POSITION DU BOUTON
+   HERO (/fr/) - RESET SAFE
    ========================= */
 
-.hero-header {
-  position: relative;
+.hero-header{
+  position: relative !important;
+  min-height: calc(100vh - 90px) !important;
+  width: 100% !important;
+
+  background-image: url("/lena-alban-wedding/img/backgrounds/header.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
 
-.hero-header .hero-cta {
-  position: absolute;
-  left: 50%;
-  bottom: 16px; /* vrai bas visuel */
-  transform: translateX(-50%);
-  z-index: 3;
+/* voile sombre */
+.hero-header .hero-overlay{
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0,0,0,0.35) !important;
+  z-index: 1 !important;
 }
 
-/* reserve l'espace pour eviter chevauchement */
-.hero-header .hero-content {
-  padding-bottom: 160px;
+/* contenu centré */
+.hero-header .hero-content{
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  max-width: 1100px !important;
+  padding: 0 20px 160px !important; /* espace pour le bouton */
 }
 
-/* =========================
-   MOBILE
-   ========================= */
-
-@media (max-width: 767px) {
-  .hero-header .hero-cta {
-    bottom: 14px;
-  }
-
-  .hero-header .hero-cta .btn {
-    min-width: 200px;
-  }
+/* texte blanc lisible */
+.hero-header, .hero-header *{
+  color: #fff !important;
+  text-shadow: 0 3px 20px rgba(0,0,0,0.7) !important;
 }
+
 
 
 
