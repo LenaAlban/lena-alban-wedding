@@ -973,6 +973,23 @@ header .intro-text p {
   }
 }
 
+/* === RESET BOOTSTRAP POUR LE BOUTON HERO === */
+
+.hero-header .hero-cta {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: 40px !important; /* ajuste ici */
+  transform: translateX(-50%) !important;
+  width: auto !important;
+}
+
+.hero-header .hero-cta a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 14px 36px !important;
+  text-transform: none !important;
+}
 
 
 
