@@ -1008,23 +1008,24 @@ header .intro-text p {
 }
 
 /* =========================
-   BOUTON CTA - HERO
+   BOUTON CTA - HERO (FINAL)
    ========================= */
 
-.hero-header .hero-cta .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero-header .hero-cta a.btn.btn-xl {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-  font-family: "Stay Classy", cursive;
-  font-size: 26px;
-  letter-spacing: 1px;
+  font-family: "stay_classy_sldtregular","Helvetica Neue",Helvetica,Arial,cursive !important;
+  font-size: 28px !important;
+  letter-spacing: 1px !important;
 
-  padding: 18px 42px;
-  line-height: 1;
+  text-transform: none !important;
+  line-height: 1 !important;
 
-  text-transform: none; /* enlève les MAJ automatiques Bootstrap */
+  padding: 20px 46px !important;
 }
+
 
 /* effet premium au survol */
 .hero-header .hero-cta .btn:hover {
