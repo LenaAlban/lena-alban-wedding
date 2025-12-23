@@ -903,3 +903,59 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* ====== FIX FINAL HEADER (à laisser en dernier) ====== */
+
+/* enlève la bande blanche bootstrap sous la navbar */
+.navbar { margin-bottom: 0 !important; border-radius: 0 !important; }
+
+/* navbar toujours au-dessus */
+.navbar-fixed-top, .navbar-default { z-index: 9999 !important; }
+
+/* décale le contenu sous la navbar (ajuste si besoin) */
+body { padding-top: 90px !important; }
+
+/* header avec image (URL en dur -> pas de {{ site.baseurl }}) */
+header {
+  min-height: calc(100vh - 90px) !important;
+  background-image: url("/lena-alban-wedding/img/backgrounds/header.png") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* voile sombre pour lisibilité */
+header::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0,0,0,0.35) !important;
+  z-index: 0 !important;
+}
+
+header .container,
+header .intro-text {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* annule les vieux paddings qui te cassent la mise en page */
+header .intro-text {
+  padding: 0 !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* force le texte visible */
+header, header * {
+  color: #fff !important;
+}
+
+/* mobile */
+@media (max-width: 767px) {
+  body { padding-top: 70px !important; }
+  header { min-height: calc(100vh - 70px) !important; }
+}
+
