@@ -941,14 +941,26 @@ body { padding-top: 0; }
   padding: 0 20px 190px !important; /* reserve la place du bouton */
 }
 
-/* texte - mariage */
-.hero-header .hero-names{
-  font-family: "stay_classy_sldtregular","Kaushan Script",cursive !important;
+.hero-names{
+  font-family: "Playfair Display", serif !important;
+  font-size: 72px !important;
   font-weight: 400 !important;
-  font-size: 78px !important;
-  line-height: 1.05 !important;
-  letter-spacing: 1px !important;
-  margin: 0 0 12px !important;
+  letter-spacing: 2px !important;
+  line-height: 1.15 !important;
+  margin-bottom: 20px !important;
+}
+
+.hero-subtitle{
+  letter-spacing: 6px !important;
+  font-size: 13px !important;
+  margin-bottom: 18px !important;
+}
+
+.hero-date,
+.hero-location{
+  letter-spacing: 2px !important;
+  line-height: 1.9 !important;
+  font-size: 15px !important;
 }
 
 .hero-header .hero-subtitle{
