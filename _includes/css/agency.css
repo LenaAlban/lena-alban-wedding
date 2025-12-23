@@ -430,7 +430,7 @@ header .intro-text .intro-heading {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.png); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.png');
     /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;
