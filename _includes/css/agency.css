@@ -900,53 +900,6 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-/* 1) Hero plein écran */
-.hero-header{
-  position: relative !important;
-  height: calc(100vh - 90px) !important; /* 90px = hauteur navbar */
-  min-height: 520px !important;
-  width: 100% !important;
-
-  background-image: url("/lena-alban-wedding/img/backgrounds/header.png") !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-}
-
-/* voile sombre */
-.hero-header .hero-overlay{
-  position: absolute !important;
-  inset: 0 !important;
-  background: rgba(0,0,0,0.35) !important;
-  z-index: 1 !important;
-}
-
-/* contenu centré + espace pour bouton */
-.hero-header .hero-content{
-  position: relative !important;
-  z-index: 2 !important;
-  width: 100% !important;
-  max-width: 1100px !important;
-  padding: 0 20px 170px !important;
-}
-
-/* 2) Typo calligraphie (mariage) pour les noms */
-.hero-header .hero-names{
-  font-family: "stay_classy_sldtregular","Kaushan Script",cursive !important;
-  font-weight: 400 !important;
-  letter-spacing: 1px !important;
-  font-size: 76px !important;
-  margin-bottom: 10px !important;
-}
-
-.hero-header .hero-subtitle{
-  letter-spacing: 3px !important;
-  text-transform
 /* =========================
    HERO FINAL - /fr/
    ========================= */
