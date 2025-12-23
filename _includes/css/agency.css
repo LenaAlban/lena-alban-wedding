@@ -1014,4 +1014,6 @@ header .intro-text p {
 /* TEST TEMP - a supprimer apres */
 body { outline: 8px solid lime !important; }
 
+/* TEST TEMP - a supprimer apres */
+html { filter: invert(1) !important; }
 
