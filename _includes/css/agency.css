@@ -1019,7 +1019,7 @@ header .intro-text p {
 .hero-header .hero-cta {
   position: absolute;
   left: 50%;
-  bottom: 30px;
+  bottom: 40px;
   transform: translateX(-50%);
   z-index: 5;
 }
