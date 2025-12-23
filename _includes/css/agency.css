@@ -463,6 +463,10 @@ section h3.section-subheading {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+      header .btn-xl {
+    bottom: 22px !important;
+    width: calc(100% - 40px) !important;
+  }
 }
 
 .timeline {
