@@ -385,8 +385,6 @@ header .intro-text .intro-lead-in {
     font-weight: 300;
 }
 
-}
-
 /* Corriger le header sous navbar fixe */
 header .intro-text {
   padding-top: 120px !important;
