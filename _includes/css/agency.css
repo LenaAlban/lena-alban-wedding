@@ -1059,4 +1059,28 @@ header .intro-text p {
   }
 }
 
+/* =========================
+   BOUTON CTA - HERO
+   ========================= */
+
+.hero-header .hero-cta .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Stay Classy", cursive;
+  font-size: 26px;
+  letter-spacing: 1px;
+
+  padding: 18px 42px;
+  line-height: 1;
+
+  text-transform: none; /* enlève les MAJ automatiques Bootstrap */
+}
+
+/* effet premium au survol */
+.hero-header .hero-cta .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
 
