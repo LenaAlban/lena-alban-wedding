@@ -908,81 +908,6 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-/* ====== FIX FINAL HEADER (à laisser en dernier) ====== */
-
-/* enlève la bande blanche bootstrap sous la navbar */
-.navbar { margin-bottom: 0 !important; border-radius: 0 !important; }
-
-/* navbar toujours au-dessus */
-.navbar-fixed-top, .navbar-default { z-index: 9999 !important; }
-
-/* décale le contenu sous la navbar (ajuste si besoin) */
-body { padding-top: 90px !important; }
-
-/* header avec image (URL en dur -> pas de {{ site.baseurl }}) */
-header {
-  position: relative !important; /* important pour header::before */
-  min-height: calc(100vh - 90px) !important;
-  background-image: url("/lena-alban-wedding/img/backgrounds/header.png") !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important; /* centre horizontalement */
-  text-align: center !important;      /* texte centre */
-}
-
-
-/* voile sombre pour lisibilité */
-header::before {
-  content: "" !important;
-  position: absolute !important;
-  inset: 0 !important;
-  background: rgba(0,0,0,0.35) !important;
-  z-index: 0 !important;
-}
-
-header .container,
-header .intro-text {
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-/* annule les vieux paddings qui te cassent la mise en page */
-header .intro-text {
-  padding: 0 !important;
-  width: 100% !important;
-  text-align: center !important;
-}
-
-/* pousse le bouton en bas, centre */
-header .btn-xl {
-  position: absolute !important;
-  left: 50% !important;
-  bottom: 38px !important;
-  transform: translateX(-50%) !important;
-  z-index: 2 !important;
-}
-
-/* evite que le bouton recouvre le texte */
-header .intro-text {
-  padding-bottom: 110px !important;
-}
-
-
-/* force le texte visible */
-header, header * {
-  color: #fff !important;
-}
-
-/* mobile */
-@media (max-width: 767px) {
-  body { padding-top: 70px !important; }
-  header { min-height: calc(100vh - 70px) !important; }
-}
-
 /* === HERO : TEXTE CENTRÉ & LISIBLE === */
 
 header .intro-text {
@@ -1086,12 +1011,24 @@ header .intro-text p {
    BOUTON EN BAS CENTRÉ
    ========================= */
 
+/* bouton bien en bas du hero */
+.hero-header {
+  position: relative;
+}
+
 .hero-header .hero-cta {
   position: absolute;
   left: 50%;
-  bottom: 32px;
+  bottom: 30px;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: 5;
+}
+
+/* on reserve de l'espace pour eviter tout chevauchement */
+.hero-header .hero-content {
+  padding-bottom: 140px;
+}
+
 }
 
 /* =========================
