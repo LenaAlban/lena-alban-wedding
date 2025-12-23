@@ -1056,4 +1056,8 @@ header .intro-text .intro-lead-in {
   header .intro-text .intro-lead-in { font-size: 18px; }
 }
 
+/* OVERRIDE FINAL - ne pas toucher */
+.navbar-default { position: fixed !important; top:0; left:0; right:0; z-index:9999 !important; }
+body { padding-top: 90px !important; }
+header { min-height: calc(100vh - 90px) !important; }
 
