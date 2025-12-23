@@ -1070,17 +1070,41 @@ header .intro-text p {
     font-size: 16px;
   }
 
-  .hero-header .hero-cta {
-    bottom: 50px;
+/* =========================
+   POSITION DU BOUTON
+   ========================= */
+
+.hero-header {
+  position: relative;
+}
+
+.hero-header .hero-cta {
+  position: absolute;
+  left: 50%;
+  bottom: 16px; /* vrai bas visuel */
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+/* reserve l'espace pour eviter chevauchement */
+.hero-header .hero-content {
+  padding-bottom: 160px;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
 @media (max-width: 767px) {
   .hero-header .hero-cta {
-    width: auto;
+    bottom: 14px;
   }
+
   .hero-header .hero-cta .btn {
-    width: auto !important;
-    min-width: 200px !important;
+    min-width: 200px;
   }
 }
+
 
 
 
