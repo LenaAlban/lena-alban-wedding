@@ -359,17 +359,32 @@ fieldset[disabled] .btn-m.active {
 }
 
 header {
-    text-align: center;
+    position: relative;
+    height: 70vh;              /* hauteur idéale desktop */
+    min-height: 480px;         /* sécurité écrans petits */
     color: #fff;
-    background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.png.png'); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.png');
     background-position: center center;
-    /*background-position: top center;*/
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    background-repeat: no-repeat;
     background-size: cover;
-    -o-background-size: cover;
+}
+header .intro-text {
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+header .intro-text .intro-heading {
+    font-family: 'stay_classy_sldtregular';
+    font-size: 64px;
+    line-height: 1.1;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+header .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-weight: 300;
+}
+
 }
 
 /* Corriger le header sous navbar fixe */
@@ -415,7 +430,7 @@ header .intro-text .intro-heading {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgrounds/header.png.png); 
+    background-image: url('{{ site.baseurl }}/img/backgrounds/header.png); 
     /*background-position: center center;*/
     background-position: top center;
     background-repeat: none;
