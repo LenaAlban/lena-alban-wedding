@@ -1027,11 +1027,11 @@ header .intro-text p {
 }
 
 
-/* effet premium au survol */
-.hero-header .hero-cta .btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+.hero-header .hero-cta a.btn.btn-xl:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
+
 
 /* on reserve de l'espace pour eviter tout chevauchement */
 .hero-header .hero-content {
