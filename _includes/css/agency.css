@@ -1171,3 +1171,20 @@ header .intro-text {
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 768px) {
+    header {
+        height: 60vh;
+        min-height: 420px;
+    }
+
+    header .intro-text {
+        padding-top: 120px;
+    }
+
+    header .intro-text .intro-heading {
+        font-size: 42px;
+    }
+}
+
+
