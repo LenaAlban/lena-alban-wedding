@@ -983,7 +983,4 @@ header, header * {
   header { min-height: calc(100vh - 70px) !important; }
 }
 
-/* cache le switch EN/FR dans la navbar */
-.navbar-default .btn-m {
-  display: none !important;
-}
+
