@@ -1071,7 +1071,7 @@ header .intro-text p {
   }
 
   .hero-header .hero-cta {
-    bottom: 18px;
+    bottom: 10px;
 @media (max-width: 767px) {
   .hero-header .hero-cta {
     width: auto;
