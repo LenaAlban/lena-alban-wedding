@@ -911,7 +911,7 @@ body {
 /* 1) Hero plein écran */
 .hero-header{
   position: relative !important;
-  height: calc(100vh - 120px) !important; /* 90px = hauteur navbar */
+  height: calc(100vh - 30px) !important; /* 90px = hauteur navbar */
   min-height: 520px !important;
   width: 100% !important;
 
