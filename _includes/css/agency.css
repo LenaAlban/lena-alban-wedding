@@ -908,62 +908,6 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-/* =========================
-   HERO (/fr/) - RESET SAFE
-   ========================= */
-
-.hero-header{
-  position: relative !important;
-  min-height: calc(100vh - 90px) !important;
-  width: 100% !important;
-
-  background-image: url("/lena-alban-wedding/img/backgrounds/header.png") !important;
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  text-align: center !important;
-}
-
-/* voile sombre */
-.hero-header .hero-overlay{
-  position: absolute !important;
-  inset: 0 !important;
-  background: rgba(0,0,0,0.35) !important;
-  z-index: 1 !important;
-}
-
-/* contenu centré */
-.hero-header .hero-content{
-  position: relative !important;
-  z-index: 2 !important;
-  width: 100% !important;
-  max-width: 1100px !important;
-  padding: 0 20px 160px !important; /* espace pour le bouton */
-}
-
-/* texte blanc lisible */
-.hero-header, .hero-header *{
-  color: #fff !important;
-  text-shadow: 0 3px 20px rgba(0,0,0,0.7) !important;
-}
-
-/* bouton CTA bien en bas */
-.hero-header .hero-cta{
-  position: absolute !important;
-  left: 50% !important;
-  bottom: 18px !important;
-  transform: translateX(-50%) !important;
-  z-index: 3 !important;
-}
-
-/* =========================
-   HERO FINAL (/fr/)
-   ========================= */
-
 /* 1) Hero plein écran */
 .hero-header{
   position: relative !important;
