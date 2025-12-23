@@ -1061,3 +1061,7 @@ header .intro-text .intro-lead-in {
 body { padding-top: 90px !important; }
 header { min-height: calc(100vh - 90px) !important; }
 
+/* Enlève la bande blanche sous la navbar Bootstrap */
+.navbar { 
+  margin-bottom: 0 !important; 
+}
