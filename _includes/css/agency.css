@@ -1065,3 +1065,69 @@ header { min-height: calc(100vh - 90px) !important; }
 .navbar { 
   margin-bottom: 0 !important; 
 }
+
+/* =========================
+   OVERRIDE FINAL HEADER + NAV (stable)
+   ========================= */
+
+/* Navbar toujours fixée */
+.navbar, .navbar-default {
+  margin-bottom: 0 !important;
+}
+
+.navbar-default {
+  position: fixed !important;
+  top: 0; left: 0; right: 0;
+  z-index: 9999 !important;
+  background: #222 !important;
+  border: 0 !important;
+}
+
+/* Décale le contenu sous la navbar */
+body {
+  padding-top: 90px !important;
+}
+
+/* Header en pleine largeur, texte centré */
+header {
+  position: relative !important;
+  margin-top: 0 !important;
+  min-height: calc(100vh - 90px) !important;
+  background-image: url('{{ site.baseurl }}/img/backgrounds/header.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Voile sombre */
+header::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: rgba(0,0,0,0.35) !important;
+  z-index: 0 !important;
+}
+
+/* IMPORTANT: Bootstrap met parfois du padding/margin via .intro-text / .container */
+header .container,
+header .intro-text {
+  position: relative !important;
+  z-index: 1 !important;
+  width: 100% !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+/* Force le centrage même si une autre règle met float/left */
+header * {
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body { padding-top: 70px !important; }
+  header { min-height: calc(100vh - 70px) !important; }
+}
