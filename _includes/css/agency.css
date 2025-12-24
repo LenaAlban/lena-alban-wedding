@@ -962,6 +962,11 @@ body { padding-top: 0; }
   line-height: 1.9 !important;
   font-size: 15px !important;
 }
+.hero-text{
+  max-width: 720px !important;
+  margin: 0 auto 40px !important;
+}
+
 
 .hero-header .hero-subtitle{
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
@@ -1097,30 +1102,6 @@ header.hero-header .hero-cta{
 /* 7) Cache EN/FR (selecteur plus large, garanti) */
 .navbar-default .btn-m{
   display: none !important;
-}
-
-/* === HERO – OPTION A : EDITORIAL CHIC === */
-
-.hero-names{
-  font-family: "Playfair Display", serif !important;
-  font-size: 72px !important;
-  font-weight: 400 !important;
-  letter-spacing: 2px !important;
-  line-height: 1.15 !important;
-  margin-bottom: 20px !important;
-}
-
-.hero-subtitle{
-  letter-spacing: 6px !important;
-  font-size: 13px !important;
-  margin-bottom: 18px !important;
-}
-
-.hero-date,
-.hero-location{
-  letter-spacing: 2px !important;
-  line-height: 1.9 !important;
-  font-size: 15px !important;
 }
 
 
