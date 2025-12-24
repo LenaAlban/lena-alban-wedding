@@ -1031,7 +1031,7 @@ text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
 /* SOUS-TITRE "se marient" */
 .hero-subtitle{
   font-family: "Montserrat", sans-serif !important;
-  font-size: 13px !important;
+  font-size: 25px !important;
   letter-spacing: 8px !important;
   text-transform: uppercase !important;
   margin-bottom: 36px !important;
@@ -1047,6 +1047,8 @@ text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
   font-family: "Montserrat", sans-serif !important;
     color: rgba(255,255,255,0.92) !important;
 text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
+      font-size: 25px !important;
+
 
 
 
