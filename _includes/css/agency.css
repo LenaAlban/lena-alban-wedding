@@ -943,7 +943,7 @@ header.hero-header::before{
 
 /* BOUTON */
 .hero-cta{
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .hero-cta a.btn.btn-xl{
@@ -951,7 +951,7 @@ header.hero-header::before{
   align-items: center;
   justify-content: center;
 
-  padding: 14px 38px;
+  padding: 25px 45px;
   border-radius: 999px;
 
   font-family: Montserrat, Arial, sans-serif;
