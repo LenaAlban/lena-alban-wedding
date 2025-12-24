@@ -990,18 +990,13 @@ header.hero-header::before{
 
 /* TITRE PRINCIPAL */
 .hero-names {
-  font-family: "Playfair Display", serif !important;
-  font-size: 64px !important;
-  font-weight: 500 !important;
-
-  color: rgba(255,255,255,0.92) !important;
-  text-align: center !important;
-
-  letter-spacing: 1.5px !important;
-  line-height: 1.2 !important;
-
-  margin-bottom: 28px !important;
-
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  font-size: 68px;
+  font-weight: 500;
+  color: #f6f3ee;
+  letter-spacing: 1px;
+  line-height: 1.15;
+  margin-bottom: 20px;
   opacity: 1 !important;
   visibility: visible !important;
   transform: none !important;
