@@ -1018,7 +1018,7 @@ header.hero-header::before{
 /* TITRE PRINCIPAL */
 .hero-names{
   font-family: "Playfair Display", serif !important;
-  font-size: 82px !important;
+  font-size: 64px !important;
   font-weight: 400 !important;
   letter-spacing: 4px !important;
   line-height: 1.25 !important;
