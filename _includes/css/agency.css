@@ -1006,27 +1006,26 @@ header.hero-header::before{
 
 
 /* SOUS-TITRE "se marient" */
-.hero-subtitle{
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 30px !important;
-  letter-spacing: 3px !important;
-  text-transform: uppercase !important;
-  margin-bottom: 36px !important;
-  opacity: 0.85 !important;
-    color: rgba(255,255,255,0.92) !important;
-text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
-
+.hero-subtitle {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 14px;
 }
 
 /* DATE + LIEU */
-.hero-date,
-.hero-location{
-  font-family: "Montserrat", sans-serif !important;
-    color: rgba(255,255,255,0.92) !important;
-text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
-      font-size: 30px !important;
-    letter-spacing: 1.6px !important;
-line-height: 1.9 !important;
+.hero-date {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+  color: rgba(255,255,255,0.9);
+}
+
+.hero-location {
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  color: rgba(255,255,255,0.85);
 }
 
 .hero-header{
