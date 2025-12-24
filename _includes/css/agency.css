@@ -1011,5 +1011,34 @@ header.hero-header::before{
   display: none !important;
 }
 
+/* ===========================
+   HERO – RESET & DESIGN FINAL
+   =========================== */
+
+/* TITRE PRINCIPAL */
+.hero-names{
+  font-family: "Playfair Display", serif !important;
+  font-size: 82px !important;
+  font-weight: 400 !important;
+  letter-spacing: 4px !important;
+  line-height: 1.25 !important;
+  margin-bottom: 52px !important;
+  color: #ffffff !important;
+}
+
+/* SOUS-TITRE "se marient" */
+.hero-subtitle{
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 13px !important;
+  letter-spacing: 8px !important;
+  text-transform: uppercase !important;
+  margin-bottom: 36px !important;
+  opacity: 0.85 !important;
+}
+
+/* DATE + LIEU */
+.hero-date,
+.hero-location{
+  font-family: "Montserrat", sans-serif !important;
 
 
