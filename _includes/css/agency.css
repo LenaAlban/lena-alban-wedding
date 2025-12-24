@@ -944,32 +944,28 @@ header.hero-header::before{
 /* TEXTE PRINCIPAL */
 .hero-names{
   font-family: "Playfair Display", serif;
-  font-size: 70px;
+  font-size: 78px;
   font-weight: 400;
-  letter-spacing: 1.5px;
-  margin-bottom: 24px;
+  letter-spacing: 3.5px;
+  margin-bottom: 48px;
   color: #ffffff;
 }
 
 /* sous-titre */
 .hero-subtitle{
-  font-family: Montserrat, Arial, sans-serif;
-  text-transform: lowercase;
-  letter-spacing: 4px;
-  font-size: 16px;
-  margin-bottom: 18px;
-  color: #ffffff;
+  letter-spacing: 7px;
+  font-size: 14px;
+  margin-bottom: 34px;
 }
+
 
 /* date + lieu */
 .hero-date,
 .hero-location{
-  font-family: Montserrat, Arial, sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 1.8;
-  margin-bottom: 6px;
-  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  line-height: 2.6;
+  margin-bottom: 14px;
 }
 
 /* BOUTON */
