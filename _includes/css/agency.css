@@ -1014,7 +1014,7 @@ header.hero-header::before{
 .hero-subtitle{
   font-family: "Montserrat", sans-serif !important;
   font-size: 30px !important;
-  letter-spacing: 8px !important;
+  letter-spacing: 3px !important;
   text-transform: uppercase !important;
   margin-bottom: 36px !important;
   opacity: 0.85 !important;
@@ -1030,7 +1030,32 @@ text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
     color: rgba(255,255,255,0.92) !important;
 text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
       font-size: 30px !important;
+    letter-spacing: 1.6px !important;
+line-height: 1.9 !important;
 }
 
+.hero-header{
+  position: relative !important;
+}
+
+.hero-header::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.25)
+  );
+  z-index: 1;
+}
+
+.hero-content,
+.hero-overlay,
+.hero-text,
+.hero-cta{
+  position: relative;
+  z-index: 2;
+}
 
 
