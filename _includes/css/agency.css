@@ -941,33 +941,6 @@ header.hero-header::before{
   padding: 0 20px;
 }
 
-/* TEXTE PRINCIPAL */
-.hero-names{
-  font-family: "Playfair Display", serif;
-  font-size: 78px;
-  font-weight: 400;
-  letter-spacing: 3.5px;
-  margin-bottom: 48px;
-  color: #ffffff;
-}
-
-/* sous-titre */
-.hero-subtitle{
-  letter-spacing: 7px;
-  font-size: 14px;
-  margin-bottom: 34px;
-}
-
-
-/* date + lieu */
-.hero-date,
-.hero-location{
-  font-size: 15px;
-  letter-spacing: 2.5px;
-  line-height: 2.6;
-  margin-bottom: 14px;
-}
-
 /* BOUTON */
 .hero-cta{
   margin-top: 30px;
@@ -1016,17 +989,26 @@ header.hero-header::before{
    =========================== */
 
 /* TITRE PRINCIPAL */
-.hero-names{
+.hero-names {
   font-family: "Playfair Display", serif !important;
   font-size: 64px !important;
-  font-weight: 400 !important;
-  letter-spacing: 4px !important;
-  line-height: 1.25 !important;
-  margin-bottom: 52px !important;
-  color: rgba(255,255,255,0.92) !important;
-text-shadow: 0 2px 16px rgba(0,0,0,0.35) !important;
+  font-weight: 500 !important;
 
+  color: rgba(255,255,255,0.92) !important;
+  text-align: center !important;
+
+  letter-spacing: 1.5px !important;
+  line-height: 1.2 !important;
+
+  margin-bottom: 28px !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  position: relative !important;
+  z-index: 3 !important;
 }
+
 
 /* SOUS-TITRE "se marient" */
 .hero-subtitle{
