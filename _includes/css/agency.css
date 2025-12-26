@@ -949,13 +949,14 @@ header.hero-header::before{
 /* TITRE */
 header.hero-header .hero-names{
   font-family: "Playfair Display", serif;
-  font-size: 64px;
+  font-size: 62px;          /* au lieu de 64 */
   font-weight: 500;
-  color: rgba(255,255,255,0.92);
-  letter-spacing: 0.3px;
-  line-height: 1.1;
-  margin: 0 0 14px 0;
+  color: rgba(255,255,255,0.9);  /* un poil moins blanc */
+  letter-spacing: 0.6px;    /* + d'élégance */
+  line-height: 1.08;
+  margin-bottom: 18px;
 }
+
 
 
 /* sous titre */
