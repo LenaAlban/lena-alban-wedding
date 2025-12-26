@@ -1025,3 +1025,7 @@ header.hero-header::before{
 .navbar-default .btn-m{
   display: none !important;
 }
+
+.hero-names { 
+  color: #ff00ff !important; 
+}
