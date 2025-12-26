@@ -948,7 +948,7 @@ header.hero-header::before{
 
 /* TITRE */
 header.hero-header .hero-names{
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Gilda Display", serif;
   font-size: 62px;          /* au lieu de 64 */
   font-weight: 500;
   color: rgba(255,255,255,0.9);  /* un poil moins blanc */
@@ -961,7 +961,7 @@ header.hero-header .hero-names{
 
 /* sous titre */
 .hero-subtitle{
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Gilda Display", serif;
   letter-spacing: 1.3px;
   font-size: 50px; /* aulieude13 */
     color: rgba(255,255,255,0.9);  /* un poil moins blanc */
@@ -971,7 +971,7 @@ header.hero-header .hero-names{
 
 /* date + lieu (espacement "classe" mais pas trop) */
 .hero-date{
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Gilda Display", serif;
   font-size: 25px;
   letter-spacing: 0.4px;
      color: rgba(255,255,255,0.9);  /* un poil moins blanc */
@@ -979,7 +979,7 @@ header.hero-header .hero-names{
 }
 
 .hero-location{
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Gilda Display", serif;
   font-size: 25px;
   letter-spacing: 0.4px;
      color: rgba(255,255,255,0.9);  /* un poil moins blanc */
