@@ -947,15 +947,16 @@ header.hero-header::before{
 }
 
 /* TITRE */
-.hero-names{
-  font-family: "Cormorant Garamond", "Playfair Display", serif;
-  font-size: 64px;          /* élégant sans être énorme */
+header.hero-header .hero-names{
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
   font-weight: 500;
-  color: rgba(255,255,255,0.95);
-  letter-spacing: 0.3px;    /* plus fin */
-  line-height: 1.15;        /* CRUCIAL pour éviter la disparition */
+  color: rgba(255,255,255,0.92);
+  letter-spacing: 0.3px;
+  line-height: 1.1;
   margin: 0 0 14px 0;
 }
+
 
 /* sous titre */
 .hero-subtitle{
