@@ -1119,7 +1119,7 @@ header.hero-header .hero-names{
 .section-title,
 #timeline h2,
 #events h2 {
-  margin-top: 0;
+  margin-top: -20px;
   margin-bottom: 40px; /* ajuste si besoin */
 }
 
