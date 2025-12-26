@@ -1149,7 +1149,8 @@ header.hero-header .hero-names{
   height: 0;
   overflow: hidden;
   border-radius: 18px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+    background-color: #c9a85d;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.12);
 }
 
 .google-maps iframe {
