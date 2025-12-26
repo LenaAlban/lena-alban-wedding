@@ -949,35 +949,35 @@ header.hero-header::before{
 /* TITRE */
 .hero-names{
   font-family: "Cormorant Garamond", "Playfair Display", serif;
-  font-size: 68px;
+  font-size: 64px;          /* élégant sans être énorme */
   font-weight: 500;
-  color: rgba(255,255,255,0.92);
-  letter-spacing: 0.5px;
-  line-height: 1.12;
-  margin: 0 0 18px 0;
+  color: rgba(255,255,255,0.95);
+  letter-spacing: 0.3px;    /* plus fin */
+  line-height: 1.15;        /* CRUCIAL pour éviter la disparition */
+  margin: 0 0 14px 0;
 }
 
 /* sous titre */
 .hero-subtitle{
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.82);
-  margin: 0 0 12px 0;
+  color: rgba(255,255,255,0.75);
+  margin: 0 0 10px 0;
 }
 
 /* date + lieu (espacement "classe" mais pas trop) */
 .hero-date{
-  font-size: 18px;
-  letter-spacing: 0.6px;
+  font-size: 17px;
+  letter-spacing: 0.4px;
   color: rgba(255,255,255,0.88);
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
 }
 
 .hero-location{
-  font-size: 17px;
-  letter-spacing: 0.4px;
-  color: rgba(255,255,255,0.84);
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: rgba(255,255,255,0.82);
   margin: 0;
 }
 
