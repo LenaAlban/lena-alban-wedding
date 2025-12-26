@@ -1223,4 +1223,60 @@ header.hero-header .hero-names{
   }
 }
 
+/* =========================
+   SECTION ARRIVÉE
+   ========================= */
+
+#arrival {
+    padding: 80px 0;
+}
+
+#arrival h2 {
+    color: #2b2b2b;
+    margin-bottom: 60px;
+}
+
+/* Icônes rondes */
+.arrival-icon {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    background-color: #e6c98b; /* beige sable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Icône SVG ou FontAwesome */
+.arrival-icon i,
+.arrival-icon svg {
+    font-size: 46px;
+    color: #ffffff;
+}
+
+/* Titres (Avion / Voiture / Train) */
+.arrival-item h4 {
+    font-family: Montserrat, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4a3f2c; /* brun chaud */
+    margin-bottom: 12px;
+}
+
+/* Texte */
+.arrival-item p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #6f6a5f; /* gris chaud */
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+/* Responsive : un peu plus d'air sur mobile */
+@media (max-width: 767px) {
+    .arrival-item {
+        margin-bottom: 50px;
+    }
+}
 
