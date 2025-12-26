@@ -961,6 +961,7 @@ header.hero-header .hero-names{
 
 /* sous titre */
 .hero-subtitle{
+    font-family: "Playfair Display", serif;
   letter-spacing: 4px;
   font-size: 20px; /* aulieude13 */
     color: rgba(255,255,255,0.9);  /* un poil moins blanc */
@@ -970,14 +971,16 @@ header.hero-header .hero-names{
 
 /* date + lieu (espacement "classe" mais pas trop) */
 .hero-date{
-  font-size: 17px;
+    font-family: "Playfair Display", serif;
+  font-size: 20px;
   letter-spacing: 0.4px;
   color: rgba(255,255,255,0.88);
   margin: 0 0 6px 0;
 }
 
 .hero-location{
-  font-size: 16px;
+    font-family: "Playfair Display", serif;
+  font-size: 20px;
   letter-spacing: 0.3px;
   color: rgba(255,255,255,0.82);
   margin: 0;
