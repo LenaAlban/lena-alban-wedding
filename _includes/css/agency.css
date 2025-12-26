@@ -1224,59 +1224,55 @@ header.hero-header .hero-names{
 }
 
 /* =========================
-   SECTION ARRIVÉE
+   ARRIVÉE (id="travel") - couleurs harmonisées
    ========================= */
 
-#arrival {
-    padding: 80px 0;
+#travel{
+  padding: 80px 0;
 }
 
-#arrival h2 {
-    color: #2b2b2b;
-    margin-bottom: 60px;
+#travel .section-heading{
+  color: #2b2b2b;
 }
 
-/* Icônes rondes */
-.arrival-icon {
-    width: 130px;
-    height: 130px;
-    margin: 0 auto 25px;
-    border-radius: 50%;
-    background-color: #e6c98b; /* beige sable */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#travel .section-subheading,
+#travel .text-muted{
+  color: rgba(43,43,43,0.65) !important;
 }
 
-/* Icône SVG ou FontAwesome */
-.arrival-icon i,
-.arrival-icon svg {
-    font-size: 46px;
-    color: #ffffff;
+/* Cercles des icônes (template Agency avec fa-stack) */
+#travel .fa-stack .fa-circle,
+#travel .fa-stack-2x.fa-circle{
+  color: #c9a85d !important; /* beige/marron chic */
+}
+
+#travel .fa-stack-1x,
+#travel .fa-stack i{
+  color: rgba(255,255,255,0.96) !important;
 }
 
 /* Titres (Avion / Voiture / Train) */
-.arrival-item h4 {
-    font-family: Montserrat, Arial, sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #4a3f2c; /* brun chaud */
-    margin-bottom: 12px;
+#travel .service-heading,
+#travel h4{
+  color: #4a3f2c;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 10px;
 }
 
 /* Texte */
-.arrival-item p {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #6f6a5f; /* gris chaud */
-    margin-bottom: 0;
-    padding: 0 10px;
+#travel p{
+  color: rgba(43,43,43,0.72);
+  line-height: 1.7;
+  font-size: 14px;
 }
 
-/* Responsive : un peu plus d'air sur mobile */
-@media (max-width: 767px) {
-    .arrival-item {
-        margin-bottom: 50px;
-    }
+/* Mobile: espacement */
+@media (max-width: 767px){
+  #travel .col-md-4{
+    margin-bottom: 40px;
+  }
 }
 
