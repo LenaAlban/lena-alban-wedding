@@ -962,10 +962,10 @@ header.hero-header .hero-names{
 /* sous titre */
 .hero-subtitle{
     font-family: "Playfair Display", serif;
-  letter-spacing: 4px;
-  font-size: 20px; /* aulieude13 */
+  letter-spacing: 1.3px;
+  font-size: 50px; /* aulieude13 */
     color: rgba(255,255,255,0.9);  /* un poil moins blanc */
-  opacity: 0.75;
+    line-height: 1.08;
   margin-bottom: 18px;
 }
 
