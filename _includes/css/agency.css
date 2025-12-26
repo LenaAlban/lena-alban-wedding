@@ -1031,3 +1031,60 @@ header.hero-header .hero-names{
   display: none !important;
 }
 
+/* =========================
+   DEROULÉ (timeline) - surcouche
+========================= */
+
+/* Ligne centrale plus douce (beige) */
+.timeline:before{
+  background-color: rgba(201,168,90,0.35);
+}
+
+/* Moins d’espace entre les étapes */
+.timeline>li{
+  margin-bottom: 60px;
+}
+@media(min-width:768px){
+  .timeline>li{ margin-bottom: 70px; }
+}
+
+/* Cercles: beige/marron + bord plus chic */
+.timeline>li .timeline-image{
+  background-color: #c9a85a;
+  border-color: rgba(255,255,255,0.85);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+}
+
+/* Titres (H4) plus “wedding” */
+.timeline .timeline-heading h4{
+  font-family: "Montserrat", Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+/* Sous-titre plus elegant (si tu utilises .subheading) */
+.timeline .timeline-heading h4.subheading{
+  font-family: "Cormorant Garamond", "Playfair Display", serif;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  text-transform: none;
+  color: #2a2a2a;
+}
+
+/* Texte plus lisible */
+.timeline .timeline-body,
+.timeline .timeline-body p{
+  color: rgba(30,30,30,0.75);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Desktop: panels un poil plus larges */
+@media(min-width:768px){
+  .timeline>li .timeline-panel{
+    width: 46%;
+  }
+}
+
