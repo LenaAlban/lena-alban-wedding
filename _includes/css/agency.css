@@ -1031,5 +1031,90 @@ header.hero-header .hero-names{
   display: none !important;
 }
 
+/* HERO - lisibilite + alignement */
+.hero-header {
+  position: relative;
+  min-height: calc(100vh - 90px); /* ajuste si ton menu fait plus/moins */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* overlay pour lire le texte sur la photo */
+.hero-header .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  pointer-events: none;
+}
+
+/* contenu au dessus de l'overlay */
+.hero-header .hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(980px, 92%);
+  padding: 24px 0 36px;
+}
+
+/* TITRE (Gilda Display) */
+.hero-header .hero-names {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-size: clamp(44px, 6vw, 72px);
+  letter-spacing: 0.01em;
+  color: rgba(255,255,255,0.94);
+  margin: 0 0 14px 0;
+}
+
+/* sous-texte: plus fin, plus espacer */
+.hero-header .hero-subtitle {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.82);
+  margin: 0 0 12px 0;
+}
+
+/* date + lieu */
+.hero-header .hero-date,
+.hero-header .hero-location {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.86);
+  margin: 0 0 8px 0;
+}
+
+/* CTA: le bouton et son texte parfaitement centres */
+.hero-header .hero-cta {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-header .hero-cta .btn.btn-xl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 26px;
+  border-radius: 999px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 13px;
+
+  background: rgba(201, 167, 92, 0.92); /* champagne */
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.96);
+}
+
+.hero-header .hero-cta .btn.btn-xl:hover {
+  background: rgba(201, 167, 92, 1);
+}
+
 
 
