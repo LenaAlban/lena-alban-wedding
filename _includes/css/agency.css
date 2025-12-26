@@ -1027,14 +1027,5 @@ header.hero-header .hero-names{
   display: none !important;
 }
 
-/* HERO - Titre (force l'application) */
-header.hero-header .hero-names{
-  font-family: "Cormorant Garamond","Playfair Display",serif !important;
-  font-size: 64px !important;
-  font-weight: 500 !important;
-  color: rgba(255,255,255,0.95) !important;
-  letter-spacing: 0.3px !important;
-  line-height: 1.1 !important;
-  margin: 0 0 12px 0 !important;
-}
+
 
