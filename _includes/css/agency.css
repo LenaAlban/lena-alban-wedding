@@ -1402,3 +1402,76 @@ header.hero-header .hero-names{
   color: #b99758 !important;
   border-color: #b99758 !important;
 }
+
+/* ---------------------------
+   FIX MOBILE - overflow + hero
+--------------------------- */
+
+/* 1) Evite la bande blanche / scroll horizontal */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 2) Navbar full width (et pas de depassement) */
+.navbar,
+.navbar-fixed-top {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* 3) Hero full width + image bien "cover" */
+header,
+header .intro-text,
+header .container {
+  max-width: 100%;
+}
+
+header {
+  background-position: center center;
+  background-size: cover;
+}
+
+/* Si tu as un wrapper type .hero / .hero-section, ca aide aussi */
+.hero, .hero-section {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ---------------------------
+   Ajustements mobile (telephone)
+--------------------------- */
+@media (max-width: 768px) {
+
+  /* Evite que la "container" cree un depassement */
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* Texte du hero plus lisible et moins large */
+  .hero-content, .intro-text, .header-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Ton titre central */
+  .hero-names {
+    font-size: 46px !important;
+    line-height: 1.05 !important;
+  }
+
+  /* Sous-titres / lignes */
+  .hero-subtitle, .hero-date, .hero-location {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Bouton hero : largeur adapte au mobile */
+  .hero-cta a.btn.btn-xl {
+    width: min(92vw, 360px);
+    padding: 16px 22px !important;
+  }
+}
+
