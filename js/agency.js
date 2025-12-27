@@ -21,6 +21,16 @@ $('body').scrollspy({
   offset: $('.navbar').outerHeight() + 5
 });
 
+$(window).on('load resize', function () {
+  $('body').scrollspy('refresh');
+});
+
+$('a.page-scroll').on('click', function () {
+  setTimeout(function () {
+    $('body').scrollspy('refresh');
+  }, 1600); // après l'animation
+});
+
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
