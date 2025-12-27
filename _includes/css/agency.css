@@ -1585,13 +1585,16 @@ section#logements .container {
 
 /* ========== DRESSCODE (sans images) ========== */
 .dresscode-section .dresscode-card{
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 18px;
-  padding: 26px 22px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  max-width: 980px;
-  margin: 10px auto 0;
+  background: #faf7f2; /* ivoire chaud au lieu de blanc pur */
+  border: 1px solid rgba(0,0,0,0.04);
+  border-radius: 16px;
+
+  padding: 22px 20px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04); /* plus léger */
+
+  max-width: 920px;
+  margin: 6px auto 0; /* rapproche du titre */
 }
 
 .dresscode-text{
