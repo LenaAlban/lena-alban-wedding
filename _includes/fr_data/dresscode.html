@@ -1,29 +1,63 @@
-<!-- Things To Do Section -->
-<section id="portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Dans Les Environs</h2>
-                <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat sapien sem, id dignissim est pellentesque eu. Etiam eget ligula fermentum, convallis odio vel, sodales metus. Proin odio arcu, tincidunt.</h3>
-            </div>
-        </div>
-        <div class="row">
-        {% for post in site.data.fr.thingstodo %}
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="../img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>{{ post.title }}</h4>
-                    <p class="text-muted">{{ post.subtitle }}</p>
-                </div>
-            </div>
-        {% endfor %}
-        </div>
+---
+layout: page
+title: Dresscode
+permalink: /fr/dresscode.html
+---
+
+<section id="dresscode" class="bg-light-gray">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Dresscode</h2>
+        <h3 class="section-subheading text-muted">
+          Pour la cérémonie et la soirée au Domaine
+        </h3>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p>
+          Pour la cérémonie laïque et la soirée au Domaine de la Mourachonne,
+          nous vous proposons une palette de couleurs douces et naturelles,
+          en harmonie avec le lieu et l’ambiance du week-end.
+        </p>
+
+        <p>
+          Il ne s’agit pas d’un dresscode strict, mais d’une inspiration afin
+          de créer une atmosphère élégante et chaleureuse.
+        </p>
+      </div>
+    </div>
+
+    <!-- Palette -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="dresscode-colors">
+          <span style="background:#E8D8C3"></span>
+          <span style="background:#D6C2AA"></span>
+          <span style="background:#E1C3B3"></span>
+          <span style="background:#B79A7A"></span>
+          <span style="background:#9E8A7A"></span>
+          <span style="background:#F6F2ED; border:1px solid #ddd"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Précisions -->
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="text-muted">
+          Merci d’éviter le noir, le blanc pur et les couleurs trop vives.
+          L’essentiel est que vous vous sentiez à l’aise 🤍
+        </p>
+
+        <p class="small text-muted">
+          Aucun dresscode particulier pour la cérémonie civile à la mairie.
+        </p>
+      </div>
+    </div>
+
+  </div>
 </section>
