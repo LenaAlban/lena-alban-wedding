@@ -1278,107 +1278,77 @@ header.hero-header .hero-names{
 
 /* =========================
    LOGEMENTS
-========================= */
+   ========================= */
 
-#stay {
-    padding: 80px 0;
+.lodging .section-heading {
+  margin-bottom: 10px;
 }
 
-#stay .section-heading {
-    margin-bottom: 10px;
+.lodging .section-subheading {
+  margin-bottom: 40px;
 }
 
-#stay .section-subheading {
-    margin-bottom: 60px;
-    font-style: italic;
-}
-
-/* Bloc logement */
-.lodging-block {
-    margin-bottom: 70px;
-    align-items: center;
-}
-
-/* Titres */
-.lodging-title {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #2b2b2b;
-}
-
-/* Texte */
-.lodging-text {
-    font-size: 15px;
-    color: #555;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-/* Listes */
-.lodging-list {
-    padding-left: 18px;
-    margin-bottom: 15px;
-}
-
-.lodging-list li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #444;
-}
-
-/* Astuce */
-.lodging-hint {
-    font-size: 13px;
-    font-style: italic;
-    color: #777;
-}
-
-/* Séparateur */
-.lodging-sep {
-    margin: 70px 0;
-    border-top: 1px solid #eee;
-}
-
-/* =========================
-   LOGEMENTS - 2 cartes
-========================= */
-
-#stay .two-maps{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-  margin-top: 18px;
-}
-
-#stay .map-card{
-  background: #fff;
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 18px;
-  padding: 16px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
-}
-
-#stay .map-title{
-  margin: 0 0 12px 0;
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.lodging-section-title {
+  margin: 10px 0 6px 0;
   font-weight: 700;
-  color: rgba(0,0,0,0.75);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-#stay .map-embed{
+.lodging-section-note {
+  margin: 0 0 18px 0;
+  color: rgba(0,0,0,0.55);
+  font-style: italic;
+}
+
+.lodging-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 22px;
+}
+
+@media (min-width: 992px) {
+  .lodging-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Cartes */
+.lodging-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.lodging-card-header {
+  padding: 18px 18px 10px 18px;
+}
+
+.lodging-card-title {
+  margin: 0 0 6px 0;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 14px;
+}
+
+.lodging-card-subtitle {
+  margin: 0;
+  color: rgba(0,0,0,0.55);
+}
+
+/* Maps */
+.lodging-map {
   position: relative;
   width: 100%;
-  height: 0;
-  padding-bottom: 70%;
-  overflow: hidden;
-  border-radius: 14px;
-  border: 1px solid rgba(0,0,0,0.08);
+  height: 260px;
+  background: #f6f6f6;
 }
 
-#stay .map-embed iframe{
+.lodging-map iframe {
   position: absolute;
   inset: 0;
   width: 100% !important;
@@ -1386,34 +1356,77 @@ header.hero-header .hero-names{
   border: 0;
 }
 
-#stay .map-note{
-  margin: 10px 0 0 0;
-  font-size: 13px;
-  color: rgba(0,0,0,0.58);
-  line-height: 1.6;
+.lodging-map-large {
+  height: 340px;
 }
 
-#stay .map-links{
-  margin-top: 10px;
-  font-size: 13px;
-  line-height: 1.6;
+.lodging-card-note {
+  margin: 0;
+  padding: 12px 18px 18px 18px;
+  color: rgba(0,0,0,0.55);
 }
 
-#stay .map-link{
-  color: rgba(0,0,0,0.70);
+/* Liens sous la carte */
+.lodging-links {
+  padding: 0 18px 18px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.lodging-link {
+  color: #7b5b2a;
   text-decoration: underline;
 }
 
-#stay .dot{
-  margin: 0 6px;
-  color: rgba(0,0,0,0.40);
+.lodging-dot {
+  color: rgba(0,0,0,0.35);
 }
 
-@media (max-width: 991px){
-  #stay .two-maps{
-    grid-template-columns: 1fr;
-  }
-  #stay .map-embed{
-    padding-bottom: 75%;
+/* Bloc texte mairie */
+.lodging-card-text {
+  padding-bottom: 8px;
+}
+
+.lodging-bullets {
+  margin: 0;
+  padding: 0 18px 18px 34px;
+  color: rgba(0,0,0,0.75);
+}
+
+.lodging-bullets li {
+  margin-bottom: 10px;
+}
+
+.lodging-cta {
+  display: inline-block;
+  margin: 0 18px 18px 18px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: #c7a46a; /* beige/marron harmonieux */
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.lodging-cta:hover {
+  background: #b08d55;
+  color: #ffffff;
+}
+
+/* Separateur */
+.lodging-sep {
+  margin: 34px 0;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Variante grid pour la mairie (si tu veux que le texte soit un peu plus "serre") */
+@media (min-width: 992px) {
+  .lodging-grid-mairie {
+    grid-template-columns: 0.9fr 1.1fr;
   }
 }
