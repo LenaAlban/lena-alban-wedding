@@ -1,3 +1,24 @@
 ---
-layout: en_default
+layout: null
+permalink: /
 ---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/fr/">
+    <meta name="robots" content="noindex">
+    <link rel="canonical" href="{{ site.baseurl }}/fr/">
+    <script>
+      window.location.replace("{{ site.baseurl }}/fr/");
+    </script>
+    <title>Redirection…</title>
+  </head>
+  <body>
+    <p>
+      Redirection vers
+      <a href="{{ site.baseurl }}/fr/">la version française</a>.
+    </p>
+  </body>
+</html>
