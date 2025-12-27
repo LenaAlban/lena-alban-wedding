@@ -1475,4 +1475,78 @@ header {
   }
 }
 
+/* =========================
+   STAY (LOGEMENTS) - FIX MOBILE BUTTONS
+   ========================= */
+
+#stay .stay-actions {
+  position: relative;
+  z-index: 10; /* au-dessus des cartes/iframes */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 18px 0 16px;
+}
+
+#stay .stay-actions .stay-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  max-width: 520px;
+
+  box-sizing: border-box;
+  padding: 16px 18px;
+
+  border-radius: 999px;
+
+  font-size: 14px;        /* plus petit sur mobile */
+  line-height: 1.2;
+  letter-spacing: 1px;
+  white-space: normal;    /* autorise le retour a la ligne */
+  word-break: normal;
+
+  margin: 0 auto;         /* centre le bouton */
+}
+
+#stay .stay-actions .stay-btn--solid {
+  background-color: #b89b63; /* beige/marron plus chic */
+  border: 0;
+  color: #ffffff;
+}
+
+#stay .stay-actions .stay-btn--outline {
+  background: transparent;
+  border: 2px solid #b89b63;
+  color: #b89b63;
+}
+
+#stay .stay-actions .stay-btn:hover {
+  filter: brightness(0.96);
+}
+
+/* Si un bloc sous le bouton "recouvre" (cas frequent), on securise */
+#stay iframe,
+#stay .stay-map,
+#stay .stay-map-card {
+  position: relative;
+  z-index: 1;
+}
+
+/* Ajustements desktop */
+@media (min-width: 768px) {
+  #stay .stay-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  #stay .stay-actions .stay-btn {
+    width: auto;
+    min-width: 320px;
+    padding: 16px 22px;
+    font-size: 13px;
+  }
+}
 
