@@ -1743,28 +1743,38 @@ section#logements .container {
 }
 
 @media (max-width: 768px) {
+
+  /* 1. Supprimer les badges texte sur mobile */
   .dresscode-badges {
     display: none;
   }
 
+  /* 2. Palette en grille */
   .dresscode-palette {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px 10px;
-    margin-top: 10px;
+    gap: 20px 12px;
+    margin-top: 16px;
+    justify-items: center;
   }
 
+  /* 3. Pastilles */
   .dresscode-palette .swatch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
   }
 
+  /* 4. Nom SOUS la pastille (et une seule fois) */
   .dresscode-palette .swatch::after {
     content: attr(title);
-    margin-top: 6px;
+    display: block;
+    margin-top: 8px;
     font-size: 12px;
+    text-align: center;
     color: #7a6f63;
+    line-height: 1.2;
   }
 }
 
