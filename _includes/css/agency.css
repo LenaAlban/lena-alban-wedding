@@ -1713,34 +1713,6 @@ section#logements .container {
   color: rgba(0,0,0,0.55);
 }
 
-/* Mobile: badges et swatches passent en 3 colonnes */
-@media (max-width: 768px){
-  .dresscode-section{
-    padding-top: 18px;
-    padding-bottom: 50px;
-  }
-
-  .dresscode-section .dresscode-card{
-    padding: 20px 14px;
-    margin-top: 12px;
-  }
-
-  .dresscode-section .dresscode-badges,
-  .dresscode-section .dresscode-palette{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    max-width: 320px;
-  }
-
-  .dresscode-section .swatch{
-    width: 52px;
-    height: 52px;
-  }
-
-  .dresscode-section .dresscode-badge{
-    font-size: 12px;
-    padding: 8px 10px;
-  }
-}
 
 @media (max-width: 768px) {
 
