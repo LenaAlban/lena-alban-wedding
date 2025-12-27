@@ -1563,4 +1563,24 @@ header {
   }
 }
 
+/* Fond de la section LOGEMENTS */
+section#stay,
+section#lodgings,
+section#logements {
+  background: #f6f2ea; /* beige tres clair */
+  padding: 70px 0;
+}
+
+/* Important: le container doit rester transparent */
+section#stay .container,
+section#lodgings .container,
+section#logements .container {
+  background: transparent !important;
+}
+
+/* Un peu plus d'air entre les 2 cards */
+.stay-card {
+  margin: 34px 0;
+}
+
 
