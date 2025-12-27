@@ -1,72 +1,118 @@
 <!-- Lodging Section -->
-<section id="stay" class="bg-light-gray">
+<section id="stay" class="bg-light-gray lodging">
   <div class="container">
 
     <div class="row">
       <div class="col-lg-12 text-center">
         <h2 class="section-heading">Logements</h2>
         <h3 class="section-subheading text-muted">
-          Nous vous conseillons de privilegier un hebergement a proximite du Domaine pour limiter les trajets.
+          Nous vous conseillons de privilégier un hébergement à proximité du Domaine pour limiter les trajets.
         </h3>
       </div>
     </div>
 
-    <!-- Proche du Domaine -->
- <div class="two-maps">
-  <div class="map-card">
-    <h4 class="map-title">Hôtels à proximité (≈ 5 km)</h4>
-    <div class="map-embed">
-      <iframe
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=hotels%20near%20Domaine%20de%20la%20Mourachonne%20Mouans-Sartoux&z=14&output=embed"
-      </iframe>
-    </div>
-    <p class="map-note">Astuce: ciblez Mouans-Sartoux ou Mougins pour limiter les trajets.</p>
-  </div>
-
-  <div class="map-card">
-    <h4 class="map-title">Locations de vacances à proximité</h4>
-    <div class="map-embed">
-      <iframe
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps?q=locations%20de%20vacances%20near%20Mouans-Sartoux&z=15&output=embed"
-      </iframe>
-    </div>
-    <div class="map-links">
-      <a class="map-link" target="_blank" rel="noopener"
-         href="https://www.airbnb.fr/s/Mouans-Sartoux/homes">Voir sur Airbnb (Mouans-Sartoux)</a>
-      <span class="dot">•</span>
-      <a class="map-link" target="_blank" rel="noopener"
-         href="https://www.abritel.fr/search/keywords:mouans-sartoux-alpes-maritimes-provence-alpes-cote-d-azur-france">Voir sur Abritel</a>
-    </div>
-  </div>
-</div>
-
-
-    <!-- Proche de la Mairie -->
-    <div class="row lodging-block">
-      <div class="col-md-5">
-        <h3 class="lodging-title">Proche de la Mairie (Nice - Vieux Nice)</h3>
-        <p class="lodging-text">
-          Pratique si vous arrivez la veille ou si vous preferez dormir a Nice.
+    <!-- PROCHES DU DOMAINE -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="lodging-section-title">Proche du Domaine (≈ 5 km)</h3>
+        <p class="lodging-section-note">
+          Zone recommandée : Mouans-Sartoux / Mougins. Le Domaine dispose d'un parking.
         </p>
-
-        <ul class="lodging-list">
-          <li><strong>Quartier recommande:</strong> Vieux Nice / Place Rossetti / cours Saleya.</li>
-          <li><strong>Astuce:</strong> l'Hotel de Ville est en plein centre - tout est faisable a pied.</li>
-        </ul>
       </div>
+    </div>
 
-      <div class="col-md-7">
-        <div class="map-embed">
+    <div class="lodging-grid">
+      <!-- Hotels -->
+      <div class="lodging-card">
+        <div class="lodging-card-header">
+          <h4 class="lodging-card-title">Hôtels à proximité</h4>
+          <p class="lodging-card-subtitle">Sélection Google Maps (zoom volontairement serré)</p>
+        </div>
+
+        <div class="lodging-map">
           <iframe
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=hotels%20near%20H%C3%B4tel%20de%20Ville%20de%20Nice%205%20Rue%20de%20l%27H%C3%B4tel%20de%20Ville&output=embed">
+            src="https://www.google.com/maps?q=hotels%20near%20Domaine%20de%20la%20Mourachonne%20Mouans-Sartoux&z=15&output=embed">
           </iframe>
         </div>
+
+        <p class="lodging-card-note">Astuce : ciblez Mouans-Sartoux ou Mougins pour limiter les trajets.</p>
+      </div>
+
+      <!-- Locations -->
+      <div class="lodging-card">
+        <div class="lodging-card-header">
+          <h4 class="lodging-card-title">Locations de vacances</h4>
+          <p class="lodging-card-subtitle">Maisons & appartements (Airbnb/Abritel)</p>
+        </div>
+
+        <div class="lodging-map">
+          <iframe
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=locations%20de%20vacances%20near%20Mouans-Sartoux&z=14&output=embed">
+          </iframe>
+        </div>
+
+        <div class="lodging-links">
+          <a class="lodging-link" target="_blank" rel="noopener"
+             href="https://www.airbnb.fr/s/Mouans-Sartoux/homes">Voir sur Airbnb (Mouans-Sartoux)</a>
+          <span class="lodging-dot">-</span>
+          <a class="lodging-link" target="_blank" rel="noopener"
+             href="https://www.abritel.fr/search/keywords:mouans-sartoux-alpes-maritimes-provence-alpes-cote-d-azur-france">Voir sur Abritel</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="lodging-sep">
+
+    <!-- PROCHES DE LA MAIRIE -->
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="lodging-section-title">Proche de la Mairie (Nice - Vieux Nice)</h3>
+        <p class="lodging-section-note">
+          Pratique si vous arrivez la veille ou si vous préférez dormir à Nice.
+        </p>
+      </div>
+    </div>
+
+    <div class="lodging-grid lodging-grid-mairie">
+      <!-- Texte -->
+      <div class="lodging-card lodging-card-text">
+        <div class="lodging-card-header">
+          <h4 class="lodging-card-title">Hôtel de Ville de Nice</h4>
+          <p class="lodging-card-subtitle">5 Rue de l'Hôtel de Ville - Nice</p>
+        </div>
+
+        <ul class="lodging-bullets">
+          <li><strong>Quartier recommandé :</strong> Vieux Nice / Place Rossetti / Cours Saleya.</li>
+          <li><strong>À savoir :</strong> l'Hôtel de Ville est en plein centre, tout est faisable à pied.</li>
+          <li><strong>Astuce :</strong> prévoir un peu d'avance pour le stationnement et l'accès au centre-ville.</li>
+        </ul>
+
+        <a class="lodging-cta" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/search/?api=1&query=H%C3%B4tel%20de%20Ville%20de%20Nice%205%20Rue%20de%20l%27H%C3%B4tel%20de%20Ville">
+          Voir sur Google Maps
+        </a>
+      </div>
+
+      <!-- Map -->
+      <div class="lodging-card">
+        <div class="lodging-card-header">
+          <h4 class="lodging-card-title">Hôtels autour de la Mairie</h4>
+          <p class="lodging-card-subtitle">Zoom centre / Vieux Nice</p>
+        </div>
+
+        <div class="lodging-map lodging-map-large">
+          <iframe
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=hotels%20near%20H%C3%B4tel%20de%20Ville%20de%20Nice%205%20Rue%20de%20l%27H%C3%B4tel%20de%20Ville&z=15&output=embed">
+          </iframe>
+        </div>
+
+        <p class="lodging-card-note">Idéal si vous voulez profiter de Nice avant le week-end.</p>
       </div>
     </div>
 
