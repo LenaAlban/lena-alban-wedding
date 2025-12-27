@@ -1957,21 +1957,28 @@ section#logements .container {
 }
 
 @media (max-width: 768px){
-  .rsvp-section .rsvp-btn{
-    width: 100%;
-    max-width: 320px;
-    padding: 16px 20px;
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-    }
-
   .rsvp-section .rsvp-actions{
     display: flex;
     justify-content: center;
   }
-}
 
+  .rsvp-section .rsvp-btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 320px;
+
+    padding: 16px 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 1.2;
+
+    white-space: normal;   /* autorise retour à la ligne si besoin */
+  }
+}
 
 /* Fix scroll sous navbar (toutes les ancres importantes) */
 #rsvp{
