@@ -1475,3 +1475,34 @@ header {
   }
 }
 
+/* MOBILE - BOUTONS section LOGEMENTS (evite le texte coupe) */
+@media (max-width: 768px) {
+  #stay .btn,
+  #stay .btn-xl,
+  #stay .hero-cta a.btn,
+  #stay a.btn,
+  #stay a.btn-xl {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    white-space: normal;        /* autorise le retour a la ligne */
+    overflow-wrap: anywhere;    /* coupe si besoin */
+    word-break: break-word;
+
+    text-align: center;
+    line-height: 1.2;
+
+    padding: 16px 18px;         /* un peu moins large que desktop */
+  }
+
+  /* Si tu as un letter-spacing tres fort en uppercase, ca fait deborder */
+  #stay .btn,
+  #stay .btn-xl,
+  #stay a.btn,
+  #stay a.btn-xl {
+    letter-spacing: 1px;        /* au lieu de 1.8px par ex */
+    font-size: 12px;            /* legerement plus petit sur mobile */
+  }
+}
