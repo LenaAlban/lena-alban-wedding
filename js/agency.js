@@ -35,3 +35,32 @@ $('div.modal').on('show.bs.modal', function() {
 		}
 	}
 });
+
+// FAQ accordion
+document.addEventListener("DOMContentLoaded", function () {
+  var items = document.querySelectorAll(".faq-item .faq-q");
+
+  items.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var item = btn.closest(".faq-item");
+      var isOpen = item.classList.contains("is-open");
+
+      // close others (option: comment these 2 lines if you want multiple open)
+      document.querySelectorAll(".faq-item.is-open").forEach(function (openItem) {
+        openItem.classList.remove("is-open");
+        var b = openItem.querySelector(".faq-q");
+        if (b) b.setAttribute("aria-expanded", "false");
+      });
+
+      // toggle current
+      if (!isOpen) {
+        item.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+      } else {
+        item.classList.remove("is-open");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+});
+
