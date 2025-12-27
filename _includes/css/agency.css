@@ -1713,6 +1713,11 @@ section#logements .container {
   color: rgba(0,0,0,0.55);
 }
 
+/* Fix: ancres cachées sous la navbar */
+#dresscode{
+  scroll-margin-top: 110px; /* ajuste si besoin: 90-130 */
+}
+
 
 @media (max-width: 768px) {
 
