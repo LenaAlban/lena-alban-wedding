@@ -1721,13 +1721,12 @@ section#logements .container {
 
 @media (max-width: 768px) {
 
-  /* 1. Supprimer les badges texte sur mobile */
-  .dresscode-badges {
+  /* cacher les badges sur mobile */
+  .dresscode-section .dresscode-badges{
     display: none;
   }
 
-  /* 2. Palette en grille */
-  .dresscode-palette {
+  .dresscode-section .dresscode-palette{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 12px;
@@ -1735,25 +1734,39 @@ section#logements .container {
     justify-items: center;
   }
 
-  /* 3. Pastilles */
-  .dresscode-palette .swatch {
-    position: relative;
+  /* swatch devient un conteneur vertical */
+  .dresscode-section .dresscode-palette .swatch{
+    width: auto;
+    height: auto;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+  }
+
+  /* le cercle */
+  .dresscode-section .dresscode-palette .swatch::before{
+    content: "";
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    background: var(--swatch);
+    border: 1px solid rgba(0,0,0,0.10);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
   }
 
-  /* 4. Nom SOUS la pastille (et une seule fois) */
-  .dresscode-palette .swatch::after {
+  /* le nom SOUS le cercle */
+  .dresscode-section .dresscode-palette .swatch::after{
     content: attr(title);
-    display: block;
-    margin-top: 8px;
     font-size: 12px;
     text-align: center;
     color: #7a6f63;
     line-height: 1.2;
   }
 }
+
 
 
 
