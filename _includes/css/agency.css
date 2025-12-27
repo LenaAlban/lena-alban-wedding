@@ -1588,20 +1588,28 @@ section#logements .container {
    ========================= */
 
 .dresscode-section{
-  padding-top: 30px;      /* resserre l'espace sous le header */
+  padding-top: 20px;      /* rapproche du header */
   padding-bottom: 70px;
+}
+
+/* ancre offset (plus fiable que scroll-margin avec bootstrap) */
+.dresscode-section .anchor{
+  display: block;
+  position: relative;
+  top: -130px;  /* desktop */
+  height: 0;
 }
 
 /* Titre + sous-titre : moins d'air */
 .dresscode-section .section-heading{
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
 }
 
 .dresscode-section .section-subheading{
-  margin: 0 0 18px 0;
+  margin: 0 0 14px 0;
 }
 
-/* Card : remonte sous le titre */
+/* Card */
 .dresscode-section .dresscode-card{
   background: #fbf7f1;
   border: 1px solid rgba(0,0,0,0.06);
@@ -1609,32 +1617,31 @@ section#logements .container {
   padding: 26px 22px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
   max-width: 980px;
-  margin: 14px auto 0;   /* plus proche du titre */
+  margin: 10px auto 0;
 }
 
-/* Texte intro dans la card */
+/* Texte intro */
 .dresscode-section .dresscode-intro{
   max-width: 820px;
-  margin: 0 auto 16px;
+  margin: 0 auto 14px;
   text-align: center;
   line-height: 1.7;
 }
 
-/* Badges + palette: même grille, mêmes colonnes */
+/* Badges + palette alignées (mêmes colonnes) */
 .dresscode-section .dresscode-badges,
 .dresscode-section .dresscode-palette{
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   gap: 10px;
-  max-width: 720px;
+  max-width: 760px;
   margin: 0 auto;
   justify-items: center;
   align-items: center;
 }
 
-/* Badges */
 .dresscode-section .dresscode-badges{
-  margin-top: 12px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -1652,9 +1659,9 @@ section#logements .container {
   white-space: nowrap;
 }
 
-/* Pastilles couleur */
+/* Pastilles */
 .dresscode-section .dresscode-palette{
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .dresscode-section .swatch{
@@ -1666,14 +1673,14 @@ section#logements .container {
   box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
-/* Bloc "A eviter": centré, propre */
+/* Bloc "A eviter" centré et propre */
 .dresscode-section .dresscode-avoid{
-  margin-top: 10px;
+  margin-top: 8px;
   padding: 16px 18px;
   border-radius: 14px;
   border: 1px solid rgba(0,0,0,0.08);
   background: rgba(255,255,255,0.35);
-  text-align: center; /* recentre tout */
+  text-align: center;
 }
 
 .dresscode-section .dresscode-col-title{
@@ -1685,11 +1692,11 @@ section#logements .container {
 }
 
 .dresscode-section .dresscode-list{
-  list-style: none;         /* supprime les puces */
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-block;    /* permet un centrage "bloc" net */
-  text-align: left;         /* texte aligné propre dans le bloc centré */
+  display: inline-block; /* bloc centré */
+  text-align: left;      /* texte lisible */
 }
 
 .dresscode-section .dresscode-list li{
@@ -1706,35 +1713,40 @@ section#logements .container {
   color: rgba(0,0,0,0.45);
 }
 
-/* Ligne mairie */
+/* Note mairie */
 .dresscode-section .dresscode-note{
   margin-top: 14px;
   text-align: center;
   color: rgba(0,0,0,0.55);
 }
 
-/* Fix: ancres cachées sous la navbar */
-#dresscode{
-  scroll-margin-top: 110px; /* ajuste si besoin: 90-130 */
-}
-
-
+/* Mobile fixes */
 @media (max-width: 768px) {
 
-  /* cacher les badges sur mobile */
+  /* navbar plus haute -> ancre plus forte */
+  .dresscode-section .anchor{
+    top: -170px;
+  }
+
+  /* cacher les badges texte sur mobile */
   .dresscode-section .dresscode-badges{
     display: none;
   }
 
+  /* palette en 3 colonnes */
   .dresscode-section .dresscode-palette{
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px 12px;
-    margin-top: 16px;
-    justify-items: center;
+    margin-top: 14px;
+    max-width: 320px;
   }
 
-  /* swatch devient un conteneur vertical */
+  /*
+    IMPORTANT:
+    On transforme .swatch en "wrapper" (hauteur auto),
+    et on dessine le cercle dans ::before,
+    sinon le texte se superpose (car hauteur fixe).
+  */
   .dresscode-section .dresscode-palette .swatch{
     width: auto;
     height: auto;
@@ -1746,7 +1758,6 @@ section#logements .container {
     gap: 8px;
   }
 
-  /* le cercle */
   .dresscode-section .dresscode-palette .swatch::before{
     content: "";
     width: 64px;
@@ -1757,7 +1768,6 @@ section#logements .container {
     box-shadow: 0 8px 18px rgba(0,0,0,0.08);
   }
 
-  /* le nom SOUS le cercle */
   .dresscode-section .dresscode-palette .swatch::after{
     content: attr(title);
     font-size: 12px;
@@ -1766,7 +1776,3 @@ section#logements .container {
     line-height: 1.2;
   }
 }
-
-
-
-
