@@ -1583,33 +1583,111 @@ section#logements .container {
   margin: 34px 0;
 }
 
-/* Dresscode */
-
-#dresscode p {
-  font-size: 16px;
-  line-height: 1.7;
+/* ========== DRESSCODE (sans images) ========== */
+.dresscode-section .dresscode-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  max-width: 980px;
+  margin: 10px auto 0;
 }
 
-.dresscode-colors {
+.dresscode-text{
+  text-align: center;
+  margin: 0 auto 16px;
+  max-width: 880px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+.dresscode-badges{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 18px;
+}
+
+.dresscode-badge{
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(214,182,104,0.18);
+  border: 1px solid rgba(0,0,0,0.06);
+  color: rgba(0,0,0,0.70);
+  font-size: 13px;
+  letter-spacing: 0.4px;
+}
+
+.dresscode-palette{
   display: flex;
   justify-content: center;
-  gap: 14px;
-  margin: 35px 0;
+  gap: 12px;
   flex-wrap: wrap;
+  margin: 0 0 22px;
 }
 
-.dresscode-colors span {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: inline-block;
+.dresscode-palette .swatch{
+  width: 62px;
+  height: 62px;
+  border-radius: 999px;
+  background: var(--swatch);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .dresscode-colors span {
-    width: 42px;
-    height: 42px;
+.dresscode-cols{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 6px;
+}
+
+.dresscode-col{
+  background: rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 16px;
+  padding: 16px 16px 12px;
+}
+
+.dresscode-col-title{
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: rgba(0,0,0,0.75);
+  text-align: center;
+}
+
+.dresscode-list{
+  margin: 0;
+  padding-left: 18px;
+  color: rgba(0,0,0,0.65);
+  line-height: 1.8;
+}
+
+.dresscode-footnote{
+  margin: 18px 0 0;
+  text-align: center;
+  color: rgba(0,0,0,0.55);
+  font-size: 14px;
+}
+
+@media (max-width: 767px){
+  .dresscode-section .dresscode-card{
+    padding: 22px 16px;
+  }
+  .dresscode-cols{
+    grid-template-columns: 1fr;
+  }
+  .dresscode-palette .swatch{
+    width: 56px;
+    height: 56px;
   }
 }
+
 
