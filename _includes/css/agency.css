@@ -1956,11 +1956,6 @@ section#logements .container {
   font-size: 14px;
 }
 
-/* Fix scroll sous navbar (toutes les ancres importantes) */
-#rsvp{
-  scroll-margin-top: 110px;
-}
-
 @media (max-width: 768px){
   .rsvp-section .rsvp-btn{
     display: inline-block;
@@ -1971,4 +1966,8 @@ section#logements .container {
   }
 }
 
+/* Fix scroll sous navbar (toutes les ancres importantes) */
+#rsvp{
+  scroll-margin-top: 110px;
+}
 
