@@ -1096,6 +1096,26 @@ header.hero-header .hero-names{
 
 } /* <-- IMPORTANT: fermeture du media query */
 
+/* =========================
+   TIMELINE - fix icons in circles
+========================= */
+
+.timeline > li .timeline-image{
+  overflow: hidden;        /* coupe ce qui depasse du cercle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Important: cible uniquement les images dans les cercles */
+.timeline > li .timeline-image img{
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+}
 
 /* =========================
    TITRE – remonter "DÉROULÉ DES ÉVÈNEMENTS"
