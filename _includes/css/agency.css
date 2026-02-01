@@ -1107,15 +1107,14 @@ header.hero-header .hero-names{
   justify-content: center;
 }
 
-/* Important: cible uniquement les images dans les cercles */
 .timeline > li .timeline-image img{
-  width: 70%;
-  height: 70%;
+  width: 55%;
+  height: 55%;
   object-fit: contain;
-  max-width: none;
-  max-height: none;
   margin: 0;
+  display: block;
 }
+
 
 /* =========================
    TITRE – remonter "DÉROULÉ DES ÉVÈNEMENTS"
