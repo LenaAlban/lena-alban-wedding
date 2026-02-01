@@ -1082,22 +1082,20 @@ header.hero-header .hero-names{
 
 @media (min-width: 768px) {
 
-  /* Panneaux plus étroits */
   .timeline > li .timeline-panel {
     width: 40%;
   }
 
-  /* Texte à gauche : on l'éloigne du centre */
   .timeline > li:not(.timeline-inverted) .timeline-panel {
     padding-right: 80px;
   }
 
-  /* Texte à droite : on l'éloigne du centre */
   .timeline > li.timeline-inverted .timeline-panel {
     padding-left: 80px;
   }
 
-}
+} /* <-- IMPORTANT: fermeture du media query */
+
 
 /* =========================
    TITRE – remonter "DÉROULÉ DES ÉVÈNEMENTS"
