@@ -612,11 +612,6 @@ section h3.section-subheading {
         .timeline > li .timeline-image {
   overflow: hidden;
 }
-.timeline > li .timeline-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
     }
 }
 
